@@ -227,6 +227,7 @@ footer{
 .footer-bottom{
     display: flex;
     margin-top: auto;
+    margin-bottom: 20px;
 }
 .sign-up{
     height: 40px;
