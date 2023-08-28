@@ -29,6 +29,9 @@ a{
     max-height: 1.6rem;
     width: auto;
 }
+.discord-logo {
+    overflow: hidden;
+}
 .navbar-center {
     display: flex;
     gap: 10px;
@@ -193,9 +196,10 @@ a{
 footer{
     width: 100vw;
     height: 35rem;
+    overflow: hidden;
 }
 .footer-top{
-    margin-top: 100px;
+    margin-top: 90px;
     display: flex;
 }
 .eng-usa{
