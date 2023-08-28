@@ -111,4 +111,26 @@ a{
     .discord-logo img{
         height: 1.3rem;
     }
+    .section-1-body-content{
+        margin-top: 5rem;
+    }
+    .section-1-body-buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 3rem !important;
+    }
+    .download-mac{
+        margin-left: 15px;
+    }
+    .section-1{
+        height: auto;
+    }
+    .imagine{
+        font-size: 2rem;
+    }
+    .imagine-discription{
+        font-size: 0.9rem;
+        margin: 10px 30px 30px 30px;
+    }
 }
