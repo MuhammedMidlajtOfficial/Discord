@@ -122,7 +122,8 @@ a{
 
 }
 .study-content-head{
-    font-size: 3rem;
+    /* font-size: 3rem; */
+    font-size: clamp(20px,4vw,40px);
     font-family: 'Rowdies', cursive;
     line-height:3.5rem;
     margin-bottom: 2rem;
@@ -130,7 +131,8 @@ a{
 }
 .study-content-discription{
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
+    font-size: clamp(16px,2vw,20px);
     line-height: 1.9rem;
 }
 
@@ -169,6 +171,8 @@ a{
     .study-content-head{
         font-size: 1.3rem;
         line-height:1.5rem;
+        margin-top: 1rem;
+
     }
     .study-content-discription{
     font-size: 1rem;
