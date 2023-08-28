@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
 /* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Rowdies', cursive; */
 
 @font-face {
     font-family:LuckiestGuy ;
@@ -101,8 +103,36 @@ a{
     font-size: 1.2rem;
     font-weight:500;
 }
+.study-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: auto;
+    padding: 50px;
+}
+.study-img img{ 
+    max-width: 100%;
+    height: auto;
+}
+.study-content{
+    max-width: 400px !important;
+    height: auto !important;
+    display: block;
 
-
+}
+.study-content-head{
+    font-size: 3rem;
+    font-family: 'Rowdies', cursive;
+    line-height:3.5rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+.study-content-discription{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+}
 
 @media screen and (max-width:425px) {
     .navbar-center{
@@ -132,5 +162,16 @@ a{
     .imagine-discription{
         font-size: 0.9rem;
         margin: 10px 30px 30px 30px;
+    }
+    .study-group{
+        display: block;
+    }
+    .study-content-head{
+        font-size: 1.3rem;
+        line-height:1.5rem;
+    }
+    .study-content-discription{
+    font-size: 1rem;
+    line-height: 1.5rem;
     }
 }
