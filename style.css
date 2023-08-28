@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 /* font-family: 'Open Sans', sans-serif; */
 /* font-family: 'Rowdies', cursive; */
+/* font-family: 'DM Serif Display', serif; */
 
 @font-face {
     font-family:LuckiestGuy ;
@@ -135,7 +137,59 @@ a{
     font-size: clamp(16px,2vw,20px);
     line-height: 1.9rem;
 }
+.video-call{
+    width: 100vw;
+    display: flex;flex-direction: column;
+    align-items: center;justify-content: center;
+    margin: 5rem 0;
 
+}
+.video-call-top{
+    height: 10rem;
+    width: 65rem;
+    display: flex;flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.video-call-top-head{
+    font-size: clamp(15px,4vw,50px);
+    font-family:LuckiestGuy ;
+    letter-spacing: 2px;
+}
+.video-call-top-content{
+    max-width: clamp(20rem,4vw,55rem);
+    font-family: 'Open Sans', sans-serif;
+    font-size: clamp(13px,2vw,18px);
+    line-height: 1.625;
+    display: flex;
+    text-align: center;
+    margin-top: 1rem;
+}
+.ready-download-button{
+    background-color: #5664F2;
+    height: 60px;
+    width: 280px;
+    border-radius: 50px;
+    display: flex;justify-content: center;align-items: center;
+    font-size: 1.2rem;
+    font-weight:500;
+    margin-top: 2rem;
+}
+.video-call-bottom{
+    background: url(img/bg.svg);
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 180px;
+    display: flex;flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7rem;
+}
+.ready{
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.9rem;
+    font-weight: bold;
+}
 @media screen and (max-width:425px) {
     .navbar-center{
         display: block;
@@ -172,10 +226,18 @@ a{
         font-size: 1.3rem;
         line-height:1.5rem;
         margin-top: 1rem;
-
     }
     .study-content-discription{
     font-size: 1rem;
     line-height: 1.5rem;
+    }
+    .ready{
+        font-size: 1.3rem;
+    }
+    .video-call-bottom{
+        margin-top: 2rem;
+    }
+    .video-call{
+        margin: 1rem 0 ;
     }
 }
