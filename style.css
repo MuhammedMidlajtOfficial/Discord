@@ -24,6 +24,7 @@ a{
     width: 100vw;
     height: 40rem;
     font-family: 'Open Sans', sans-serif;
+    position: relative;
 }
 .discord-logo img{
     max-height: 1.6rem;
@@ -59,27 +60,30 @@ a{
 .bg-1{
     z-index: 0;
     position: absolute;
-    bottom: 11.8rem;
+    bottom: 0;
     left: -33rem;
 }
 .bg-2{
     z-index: 1;
     position: absolute;
-    bottom: 11.8rem;
+    bottom: 0;
     left: -17rem;
 }
 .bg-3{
     z-index: 1;
     position: absolute;
-    bottom: 11.8rem;
+    bottom: 0;
     right: -14rem;
 }
 .section-1-body-content{
     display: flex;
-    /* justify-content: end; */
     align-items:center;
     flex-direction: column;
     margin-top: 8rem;
+    z-index: 3;
+}
+.section-1-body-buttons, .imagine, .imagine-discription{
+    z-index: 3;
 }
 .imagine{
     font-size: 4rem;
