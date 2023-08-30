@@ -22,7 +22,7 @@ a{
 .section-1{
     background-color: #404EED;
     width: 100vw;
-    height: 40rem;
+    height: 43rem;
     font-family: 'Open Sans', sans-serif;
     position: relative;
 }
@@ -56,7 +56,8 @@ a{
     font-size: 0.8rem;
     font-weight: bold;
 }
-
+.background-img{
+}
 .bg-1{
     z-index: 0;
     position: absolute;
@@ -64,12 +65,14 @@ a{
     left: -33rem;
 }
 .bg-2{
+    display: none;
     z-index: 1;
     position: absolute;
     bottom: 0;
     left: -17rem;
 }
 .bg-3{
+    display: none;
     z-index: 1;
     position: absolute;
     bottom: 0;
@@ -86,13 +89,14 @@ a{
     z-index: 3;
 }
 .imagine{
-    font-size: 4rem;
+    font-size: clamp(1.5rem,6vw,4rem) ;
     font-family:LuckiestGuy ;
     letter-spacing: 2px;
 }
 .imagine-discription{
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.1rem;
+    font-size: clamp(1rem,2vw,1.1rem) ;
+    margin:0 10px;
 }
 .download-mac{
     background-color: #fff;
@@ -270,9 +274,6 @@ footer{
     .section-1{
         height: auto;
     }
-    .imagine{
-        font-size: 2rem;
-    }
     .imagine-discription{
         font-size: 0.9rem;
         margin: 10px 30px 30px 30px;
@@ -286,8 +287,8 @@ footer{
         margin-top: 1rem;
     }
     .study-content-discription{
-    font-size: 1rem;
-    line-height: 1.5rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
     }
     .ready{
         font-size: 1.3rem;
@@ -303,5 +304,42 @@ footer{
     }
     footer{
         height: auto;
+    }
+    .bg-2{
+        display: block;
+    }
+    .bg-3{
+        display: none;
+    }
+    
+}
+@media screen and (max-width:768px) and (min-width:426px){
+    .bg-3{
+        display: block;
+        right: 0;
+    }
+    .section-1{
+        height: 43rem;
+    }
+}
+@media screen {
+    .bg-2{
+        display: block;
+    }
+    .bg-3{
+        display: block;
+    }
+}
+@media screen and (max-width:767px) {
+    .section-1-body-buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .download-mac{
+        margin-left: 15px;
+    }
+    .imagine-discription{
+        margin:0 20px;
     }
 }
